@@ -1,4 +1,6 @@
-# Make an index of input .yoda files, produced automatically by Andrew's framework
+# Merge yoda files with rivet-merge
+# To avoid bad scaling with N(files), splits merge jobs recursively into fixed-size batches
+# (Why do the authors of these merging utilities never do this themselves???)
 import os
 import sys
 import glob
